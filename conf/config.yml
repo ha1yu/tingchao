@@ -1,0 +1,43 @@
+Debug: true
+name: tingchao-server
+Host: 0.0.0.0
+CcServerPort: 8888
+WebServerPort: 80
+ServerVersion: 1.0.0
+MessageAesKey: woshikey
+MsgHistoryLen: 5
+ClientVersion: 1.0.0
+
+mysql:
+  hostname: 127.0.0.1
+  username: root
+  password: toor
+  port: 3306
+  DbName: zhuque
+
+redis:
+  hostname: 127.0.0.1
+  port: 1234
+
+Session:
+  SessionTime: 40000
+  SessionGcTime: 43200
+  SessionCookieName: JSESSIONID
+
+update:
+  UpdateWindows386:
+  UpdateWindowsAmd64:
+  UpdateWindowsDefault:
+  UpdateLinux386:
+  UpdateLinuxAmd64:
+  UpdateLinuxArm:
+  UpdateLinuxArm64:
+  UpdateLinuxMips:
+  UpdateLinuxMipsle:
+  UpdateLinuxMips64:
+  UpdateLinuxMips64le:
+  UpdateLinuxDefault:
+  UpdateDarwinAmd64:
+  UpdateDarwinArm64:
+  UpdateDarwinDefault:
+  UpdateDefault: 1

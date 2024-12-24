@@ -1,7 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"github.com/titan/tingchao/ccserver"
+	"github.com/titan/tingchao/webserver"
+)
 
 func main() {
-	fmt.Print("Enter your name: asd")
+
+	// 开启cc服务
+	cs := ccserver.NewCcServer()
+	cs.Run()
+
+	// 开启web管理服务
+	ws := webserver.NewWebServer()
+	ws.Run()
+
+	select {}
 }
